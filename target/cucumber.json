@@ -1,0 +1,301 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-18T17:34:33.656Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "When user logs in with valid credentials, Account Summary page should be displayed",
+        "description": "",
+        "id": "login-functionality;when-user-logs-in-with-valid-credentials--account-summary-page-should-be-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 580997600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10575790500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 958770300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in with username \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32012800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"Account Summary\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Summary\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-18T17:34:45.868Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "When user try to log in with blank username or password error message needs to be displayed",
+        "description": "",
+        "id": "login-functionality;when-user-try-to-log-in-with-blank-username-or-password-error-message-needs-to-be-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 593199900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9959219100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 357992800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user logs in with username \"\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38554300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "\"Login and/or password are wrong.\" error message needs to be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.error_message_needs_to_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative_scenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-18T17:34:56.818Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "When user try to log in with invalid credentials error message needs to be displayed",
+        "description": "",
+        "id": "login-functionality;when-user-try-to-log-in-with-invalid-credentials-error-message-needs-to-be-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 582752400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9937526800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 388013000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user logs in with username \"invalid\" and password \"invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"invalid password\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31007800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"Login and/or password are wrong.\" error message needs to be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinitions.error_message_needs_to_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative_scenario"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
